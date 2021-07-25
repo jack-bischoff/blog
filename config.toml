@@ -2,3 +2,42 @@ baseURL = "http://jackbischoff.com/"
 languageCode = "en-us"
 title = "Literally Nobody Asked"
 theme = "cactus"
+
+# Main menu which appears below site header.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 3
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 4
+
+[params]
+  colortheme = "white" # dark, light, white, or classic
+  description = "I have a lot of thoughts. Some people tell me that’s my biggest flaw. Regardless, these are my thoughts, shouted into the void and filtered by relevance to the field of software engineering (for now), a field which I have just begun to understand, but one which I work in everyday. But to be clear, I am no expert, nor a genius. Nor do I or will I pretend that this blog strictly original in content or intent. If I had to stick a subtitle to this blog, ~~'boring'~~'meditations' would be a good start. This space captures my reflections, allows me to work out and synthesize lessons learned in my CS degree, my individual research into software engineering, and my testimony as an observer and participant in a number of professional software development projects. Theses are my meditations. Feel free to derive as much or as little value from them as you think appropriate. I will undoubtably write misguided or incomplete, or even flat out wrong posts. Maybe I might hit the nail on the head with a few. That’s part of the fun. So. Since nobody, literally nobody, asked: here are my thoughts."
+
+
+
+[[params.social]]
+  name = "github"
+  link = "https://github.com/jack-bischoff"
+
+[[params.social]]
+  name = "email"
+  link = "jackbischoff12@gmail.com"
+
+[[params.social]]
+  name = "linkedin"
+  link = "www.linkedin.com/in/jack-bischoff-227953159"
