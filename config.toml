@@ -1,0 +1,4 @@
+baseURL = "http://jackbischoff.com/"
+languageCode = "en-us"
+title = "Literally Nobody Asked"
+theme = "cactus"
