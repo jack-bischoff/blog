@@ -2,6 +2,8 @@ baseURL = "https://jackbischoff.com/"
 languageCode = "en-us"
 title = "Literally Nobody Asked"
 theme = "cactus"
+googleAnalytics = "G-LYRXKJHFDH"
+
 
 # Main menu which appears below site header.
 [[menu.main]]
@@ -42,4 +44,3 @@ weight = 4
   name = "linkedin"
   link = "www.linkedin.com/in/jack-bischoff-227953159"
 
-googleAnalytics = "G-LYRXKJHFDH"
