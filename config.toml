@@ -41,3 +41,5 @@ weight = 4
 [[params.social]]
   name = "linkedin"
   link = "www.linkedin.com/in/jack-bischoff-227953159"
+
+googleAnalytics = "G-LYRXKJHFDH"
