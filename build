@@ -1,0 +1,29 @@
+#!/bin/bash
+
+set -e
+POST_DIR='./content/posts'
+PAGE_DIR='./content/pages'
+STATIC='./static'
+POST_TEMPLATE=$(cat templates/post.tpl)
+
+rm -rf dist
+mkdir -p dist/static/posts
+cp -r $STATIC dist/
+cp index.html dist/
+
+posts=$(ls -t $POST_DIR)
+for post in "${posts[@]}"; do
+	
+	post_path="${POST_DIR}/${post}"
+	breakpoint=$(awk '/---/ {print NR}' "$post_path")
+	metadata=$(head -n $((breakpoint-1)) "$post_path")
+	
+	content=$(tail -n "+$((breakpoint+1))" "$post_path")
+
+	post_html=$(echo "$content" | perl ./pkg/Markdown.pl)
+	rendered_html=${POST_TEMPLATE//\%content\%/$post_html}
+	echo "$rendered_html" > "dist/static/posts/${post/.md/.html}"
+
+done
+
+# tar -czvf index.html dist > blog.tar.gzip

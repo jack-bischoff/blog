@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+POST_DIR='./content/posts'
+PAGE_DIR='./content/pages'
+STATIC='./static'
+
+
+
+posts=$(ls -t $POST_DIR)
+for post in "${posts[@]}"; do
+	cat "${POST_DIR}/${post}"
+done

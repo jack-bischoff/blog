@@ -1,0 +1,28 @@
+html {
+    font-family: serif;
+    font-size: 17px;
+    margin: auto;
+}
+
+.title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.title h1 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bio {
+    width: 50%;
+}
+
+.posts {
+    width: 50%
+}

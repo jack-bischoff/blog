@@ -1,0 +1,14 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.content {
+    width: 50%;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
